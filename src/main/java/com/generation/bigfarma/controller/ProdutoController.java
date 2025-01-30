@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.generation.bigfarma.model.Produto;
 import com.generation.bigfarma.repository.ProdutoRepository;
 
+//CRUD
 @RestController
 @RequestMapping("/produtos")
 public class ProdutoController {
