@@ -20,7 +20,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 import com.generation.bigfarma.model.Categoria;
 import com.generation.bigfarma.repository.CategoriaRepository;
-import com.generation.bigfarma.repository.ProdutoRepository;
+
 
 import jakarta.validation.Valid;
 
@@ -46,8 +46,7 @@ public class CategoriaController {
     
     @GetMapping("/nome/{nome}")
     public ResponseEntity<List<Categoria>> getByName(@PathVariable String nome){
-        return ResponseEntity.ok(categoriaRepository
-        		.findAllByNomeContainingIgnoreCase(nome)); 
+        return ResponseEntity.ok(categoriaRepository.findAllByNomeContainingIgnoreCase(nome));
         
     }
     
